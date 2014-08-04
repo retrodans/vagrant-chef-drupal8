@@ -7,14 +7,14 @@
 
 
 ## Installation
-* Extract the drupal8 file you downloaded into public/drupal8/public so index.php is at drupal8/public/index.php
-* Add this to your hosts file: 192.168.33.18   local.drupal8.com
-* cd rb_vagrant_d8
-* vagrant up
-* vagrant ssh
-* cd /vagrant/public/buildscripts
-* chmod a+x drupal8.sh
-* ./drupal8.sh
+* Extract the drupal8 file you downloaded into `public/drupal8/public` so index.php is at `public/drupal8/public/index.php`
+* Add this to your hosts file: `192.168.33.18   local.drupal8.com`
+* `cd rb_vagrant_d8`
+* `vagrant up`
+* `vagrant ssh`
+* `cd /vagrant/public/buildscripts`
+* `chmod a+x drupal8.sh`
+* `./drupal8.sh`
 * Open browser to: http://local.drupal8.com/
 * Install using the UI and the DB drupal8 (user:root, pass:vagrant)
 
@@ -38,7 +38,7 @@
 ## Troubleshooting
 Let me know of any issues, and we can attempt to fix them ASAP to share with others
 ### Error on drupal8 install
-First ensure you have deleted any settings.php file in there which may already be setup (as per any other drupal site)
+First ensure you have deleted any `settings.php` file in there which may already be setup (as per any other drupal site)
 
 
 
