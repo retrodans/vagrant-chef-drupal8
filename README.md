@@ -21,16 +21,17 @@
 
 
 ## To Do
-* Have chef setup the DB ready for this site rather than in a seperate script
+* Have chef setup the DB ready for this site rather than in a seperate script (http://learn.getchef.com/legacy/starter-use-cases/convert-bash-to-chef/)
 * Look into all the warning vagrant is returning
-  * WARN: Cloning resource attributes for service[apache2] from prior resource (CHEF-3694)
-  * WARN: Cloning resource attributes for template[/etc/apache2/ports.conf] from prior resource (CHEF-3694)
-  * WARN: Cloning resource attributes for directory[/var/cache/local/preseeding] from prior resource (CHEF-3694)
-  * Cloning resource attributes for directory[/var/lib/mysql] from prior resource (CHEF-3694)
-  * INFO: Could not find previously defined grants.sql resource
-  * WARN: Cloning resource attributes for service[mysql] from prior resource (CHEF-3694)
-  * WARN: Cloning resource attributes for execute[apt-get update] from prior resource (CHEF-3694)
-  * WARN: Cloning resource attributes for package[vim] from prior resource (CHEF-3694)
+  * *WARN: Cloning resource attributes for service[apache2] from prior resource (CHEF-3694)*
+  * *WARN: Cloning resource attributes for template[/etc/apache2/ports.conf] from prior resource (CHEF-3694)*
+  * *WARN: Cloning resource attributes for directory[/var/cache/local/preseeding] from prior resource (CHEF-3694)*
+  * *Cloning resource attributes for directory[/var/lib/mysql] from prior resource (CHEF-3694)*
+  * *INFO: Could not find previously defined grants.sql resource*
+  * *WARN: Cloning resource attributes for service[mysql] from prior resource (CHEF-3694)*
+  * *WARN: Cloning resource attributes for execute[apt-get update] from prior resource (CHEF-3694)*
+  * *WARN: Cloning resource attributes for package[vim] from prior resource (CHEF-3694)*
+* PHPmyAdmin???
 
 
 
@@ -39,6 +40,9 @@
 Let me know of any issues, and we can attempt to fix them ASAP to share with others
 ### Error on drupal8 install
 First ensure you have deleted any `settings.php` file in there which may already be setup (as per any other drupal site)
+### When I `vagrant ssh` in there is nothing within the /vagrant directory
+Could be permissions, I set the whole directory to be `drwxr-xr-x` and it worked fine
+
 
 
 

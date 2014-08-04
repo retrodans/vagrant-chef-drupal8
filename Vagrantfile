@@ -30,8 +30,6 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.33.18"
 
   # Set share folder permissions to 777 so that apache can write files (nfs = fast rebuild, rsync = fast pageload)
-  #config.vm.synced_folder ".", "/vagrant", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
-  #config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__auto: "true"
   config.vm.synced_folder ".", "/vagrant", :nfs => { :mount_options => ["dmode=777","fmode=666"] }, :nfs_version => 4
 
 
