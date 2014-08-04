@@ -1,0 +1,31 @@
+{
+    "name": "web",
+    "default_attributes": {},
+    "override_attributes": {},
+    "json_class": "Chef::Role",
+    "description": "web server role",
+    "chef_type": "role",
+    "run_list": [
+        "recipe[apt]",
+        "recipe[build-essential]",
+        "recipe[apache2]",
+        "recipe[apache2::mod_php5]",
+        "recipe[apache2::mod_rewrite]",
+        "recipe[apache2::mod_ssl]",
+        "recipe[mysql::server]",
+        "recipe[php::dotdeb]",
+        "recipe[php::fpm]",
+        "recipe[php]",
+        "recipe[php::module_mbstring]",
+        "recipe[php::module_mcrypt]",
+        "recipe[php::module_gd]",
+        "recipe[php::module_mysql]",
+        "recipe[sqlite]",
+        "recipe[vim]",
+        "recipe[oh-my-zsh]",
+        "recipe[git]",
+        "recipe[cron]",
+        "recipe[ntp]",
+        "recipe[rb_test_vagrant_main]"
+    ]
+}

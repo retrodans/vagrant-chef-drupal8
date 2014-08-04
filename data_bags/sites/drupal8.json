@@ -1,0 +1,8 @@
+{
+    "id": "drupal8",
+    "host": "drupal8.com",
+    "docroot": "/vagrant/public/drupal8/public",
+    "aliases": [
+        "local.drupal8.com"
+    ]
+}
